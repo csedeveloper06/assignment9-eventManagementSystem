@@ -1,9 +1,14 @@
+import Footer from "../../Shared/Footer";
+import Navbar from "../../Shared/Navbar";
+import Banner from "./Banner";
 
 
 const Home = () => {
     return (
         <div>
-            <h2 className="text-5xl font-poppins">This is Home</h2>
+            <Navbar></Navbar>
+            <Banner></Banner>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,9 +1,9 @@
-
+import errorimg from '../../assets/error.jpg'
 
 const ErrorPage = () => {
     return (
         <div>
-            <h2 className="text-4xl">Error Page</h2>
+            <img src={errorimg} alt="" />
         </div>
     );
 };

@@ -1,0 +1,315 @@
+
+[
+    {
+    "id": 1,
+    "image":"https://i.ibb.co/vH0cy07/MERNbasic.png",
+    "title": "Basic MERN Stack",
+    "title-desc":"web development stack that consists of four key technologies: MongoDB, Express.js, React, and Node.js",
+    "price": "$150",
+    "level": "Beginner",
+    "date": "2023-11-15",
+    "time": "9:00 AM - 4:00 PM",
+    "location": "123 Main Street, Cityville, ST",
+    "description": "Join us for an exciting one-day workshop on basic MERN (MongoDB, Express, React, Node.js) stack web development. This beginner-level workshop will cover the fundamentals and best practices of building modern web applications using the MERN stack. Whether you're completely new to web development or have some basic knowledge, this workshop is designed to get you started on the right path.",
+    "instructors": [
+      {
+        "name": "John Doe",
+        "title": "Full-Stack Developer",
+        "bio": "John is an experienced full-stack developer with a passion for teaching. He has worked on numerous MERN stack projects and is excited to share his knowledge with you."
+      },
+      {
+        "name": "Jane Smith",
+        "title": "Front-End Developer",
+        "bio": "Jane specializes in front-end development using React and has a keen eye for user interfaces. She will be leading the React portion of the workshop."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "9:00 AM - 10:30 AM",
+        "sessionTitle": "Introduction to MERN Stack",
+        "description": "Learn what the MERN stack is and why it's popular for web development. Get an overview of the core technologies involved."
+      },
+      {
+        "time": "10:45 AM - 12:30 PM",
+        "sessionTitle": "Setting Up Your Development Environment",
+        "description": "Step-by-step guide on setting up your development environment for MERN stack development, including installing Node.js, MongoDB, and a code editor."
+      },
+      {
+        "time": "12:30 PM - 1:30 PM",
+        "sessionTitle": "Lunch Break",
+        "description": "Enjoy a delicious lunch and networking with fellow participants."
+      },
+      {
+        "time": "1:30 PM - 3:00 PM",
+        "sessionTitle": "Building a React Front-End",
+        "description": "Hands-on workshop on creating a basic React front-end for your MERN application. Covering components, state management, and more."
+      },
+      {
+        "time": "3:15 PM - 4:00 PM",
+        "sessionTitle": "Creating a Node.js Backend",
+        "description": "Learn how to build a simple Node.js backend for your MERN application, including setting up routes and handling basic API requests."
+      }
+    ],
+    "registrationLink": "https://example.com/workshop-registration",
+    "contactEmail": "info@example.com",
+    "contactPhone": "+1 (123) 456-7890"
+  },
+  {
+    "id": 2,
+    "image":"https://i.ibb.co/z5YR5tn/MERN.png",
+    "title": "Advanced MERN Stack Web Development Workshop",
+    "title-desc":" involves a deeper understanding and implementation of the core technologies, as well as additional concepts and tools",
+    "price":"$200",
+    "level": "Advanced",
+    "date": "2023-12-10",
+    "time": "9:00 AM - 5:00 PM",
+    "location": "456 Tech Avenue, Techville, ST",
+    "description": "Join us for a full-day advanced MERN (MongoDB, Express, React, Node.js) stack web development workshop. This workshop is designed for experienced developers who want to take their MERN stack skills to the next level. Explore advanced concepts, best practices, and real-world applications of the MERN stack.",
+    "instructors": [
+      {
+        "name": "Emily Johnson",
+        "title": "Senior Full-Stack Developer",
+        "bio": "Emily has over a decade of experience in full-stack development and has worked on complex MERN stack projects. She will share her deep insights and advanced techniques with participants."
+      },
+      {
+        "name": "Michael Davis",
+        "title": "DevOps and Performance Expert",
+        "bio": "Michael specializes in optimizing MERN stack applications for performance and scalability. He will guide you through advanced deployment and performance tuning."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "9:00 AM - 10:30 AM",
+        "sessionTitle": "Advanced React Concepts",
+        "description": "Dive deep into advanced React topics, including hooks, context API, and performance optimization techniques."
+      },
+      {
+        "time": "10:45 AM - 12:30 PM",
+        "sessionTitle": "Advanced Node.js and Express",
+        "description": "Explore advanced concepts in Node.js and Express, such as asynchronous programming, security, and building RESTful APIs."
+      },
+      {
+        "time": "12:30 PM - 1:30 PM",
+        "sessionTitle": "Lunch Break",
+        "description": "Enjoy a gourmet lunch and network with other advanced developers."
+      },
+      {
+        "time": "1:30 PM - 3:00 PM",
+        "sessionTitle": "Advanced MongoDB and Database Optimization",
+        "description": "Master advanced MongoDB techniques and learn how to optimize database performance for large-scale applications."
+      },
+      {
+        "time": "3:15 PM - 5:00 PM",
+        "sessionTitle": "Deployment and Scaling Strategies",
+        "description": "Discover advanced deployment strategies, containerization, and how to scale MERN applications for high traffic."
+      }
+    ],
+    "registrationLink": "https://example.com/advanced-workshop-registration",
+    "contactEmail": "info@example.com",
+    "contactPhone": "+1 (123) 456-7890"
+  },
+  {
+    "id": "3",
+    "workshopTitle": "PERN Stack Basics Workshop",
+    "stack": "PERN (PostgreSQL, Express, React, Node.js)",
+    "level": "Beginner",
+    "date": "2024-01-20",
+    "time": "9:30 AM - 4:30 PM",
+    "location": "789 Data Lane, Dataville, ST",
+    "description": "Join us for a one-day workshop on the basics of the PERN stack. This beginner-level workshop will introduce you to the fundamentals of building web applications with PostgreSQL, Express, React, and Node.js. No prior experience is required.",
+    "instructors": [
+      {
+        "name": "Sarah Walker",
+        "title": "Database Developer",
+        "bio": "Sarah specializes in database development and will guide you through the PostgreSQL and backend components."
+      },
+      {
+        "name": "Alex Turner",
+        "title": "Front-End Developer",
+        "bio": "Alex is an expert in React and front-end development, and he will help you build the user interface."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "9:30 AM - 11:00 AM",
+        "sessionTitle": "Introduction to PERN Stack",
+        "description": "Learn the core components of the PERN stack and why it's a powerful technology stack for web development."
+      },
+      {
+        "time": "11:15 AM - 12:45 PM",
+        "sessionTitle": "Setting Up Your Development Environment",
+        "description": "Get your development environment ready by installing PostgreSQL, Express, React, and Node.js."
+      },
+      {
+        "time": "12:45 PM - 1:45 PM",
+        "sessionTitle": "Lunch Break",
+        "description": "Enjoy a delicious lunch and connect with other workshop participants."
+      },
+      {
+        "time": "2:00 PM - 3:30 PM",
+        "sessionTitle": "Building a Simple PERN Application",
+        "description": "Create a basic web application using PostgreSQL for the database, Express for the server, and React for the frontend."
+      },
+      {
+        "time": "3:45 PM - 4:30 PM",
+        "sessionTitle": "Q&A and Next Steps",
+        "description": "Ask questions, discuss your learning, and explore where to go next in your PERN stack journey."
+      }
+    ],
+    "registrationLink": "https://example.com/pern-basics-workshop-registration",
+    "contactEmail": "info@example.com",
+    "contactPhone": "+1 (123) 456-7890"
+  },
+  {
+    "id": "4",
+    "workshopTitle": "Advanced PERN Stack Workshop",
+    "stack": "PERN (PostgreSQL, Express, React, Node.js)",
+    "level": "Advanced",
+    "date": "2024-02-15",
+    "time": "10:00 AM - 5:30 PM",
+    "location": "123 Dev Road, Codetown, ST",
+    "description": "Join our advanced PERN stack workshop designed for experienced developers. Explore advanced topics and techniques for building scalable and high-performance applications using PostgreSQL, Express, React, and Node.js.",
+    "instructors": [
+      {
+        "name": "Mark Anderson",
+        "title": "Full-Stack Architect",
+        "bio": "Mark has extensive experience in architecting full-stack applications and will share advanced techniques for PERN stack development."
+      },
+      {
+        "name": "Grace Carter",
+        "title": "Database Expert",
+        "bio": "Grace is a database expert who will delve into advanced PostgreSQL features and optimization strategies."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "10:00 AM - 11:30 AM",
+        "sessionTitle": "Advanced React and State Management",
+        "description": "Deep dive into advanced React topics, including state management, performance optimization, and component lifecycles."
+      },
+      {
+        "time": "11:45 AM - 1:15 PM",
+        "sessionTitle": "Advanced Node.js and Express Techniques",
+        "description": "Explore advanced Node.js and Express concepts, such as middleware, security, and RESTful API design."
+      },
+      {
+        "time": "1:15 PM - 2:15 PM",
+        "sessionTitle": "Lunch Break",
+        "description": "Enjoy a gourmet lunch and engage with other advanced developers."
+      },
+      {
+        "time": "2:30 PM - 4:00 PM",
+        "sessionTitle": "Advanced Database Optimization with PostgreSQL",
+        "description": "Learn advanced database optimization techniques, including indexing, query optimization, and data modeling."
+      },
+      {
+        "time": "4:15 PM - 5:30 PM",
+        "sessionTitle": "Deploying and Scaling PERN Applications",
+        "description": "Discover strategies for deploying and scaling PERN stack applications in a production environment."
+      }
+    ],
+    "registrationLink": "https://example.com/pern-advanced-workshop-registration",
+    "contactEmail": "info@example.com",
+    "contactPhone": "+1 (123) 456-7890"
+  },
+  {
+    "id": "5",
+    "workshopTitle": "Full-Stack Basics Workshop",
+    "stack": "JavaScript Full Stack",
+    "level": "Beginner",
+    "date": "2024-03-10",
+    "time": "9:00 AM - 4:00 PM",
+    "location": "456 Code Lane, Devcity, ST",
+    "description": "Join our beginner-level full-stack development workshop to learn the fundamentals of building web applications using the JavaScript stack. Whether you're a complete beginner or have some experience, this workshop will help you kickstart your full-stack journey.",
+    "instructors": [
+      {
+        "name": "Michael White",
+        "title": "Full-Stack Developer",
+        "bio": "Michael is an experienced full-stack developer who is passionate about teaching beginners. He will guide you through the basics of both frontend and backend development."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "9:00 AM - 10:30 AM",
+        "sessionTitle": "Introduction to Full-Stack Development",
+        "description": "Get an overview of full-stack development, its benefits, and the technologies involved."
+      },
+      {
+        "time": "10:45 AM - 12:30 PM",
+        "sessionTitle": "Frontend Development with HTML, CSS, and JavaScript",
+        "description": "Learn the basics of building interactive web interfaces using HTML, CSS, and JavaScript."
+      },
+      {
+        "time": "12:30 PM - 1:30 PM",
+        "sessionTitle": "Lunch Break",
+        "description": "Enjoy a delicious lunch and connect with other participants."
+      },
+      {
+        "time": "1:30 PM - 3:00 PM",
+        "sessionTitle": "Backend Development with Node.js and Express",
+        "description": "Explore the basics of server-side development using Node.js and Express, including routing and handling requests."
+      },
+      {
+        "time": "3:15 PM - 4:00 PM",
+        "sessionTitle": "Q&A and Next Steps",
+        "description": "Ask questions, discuss your learning, and plan your next steps in the full-stack development journey."
+      }
+    ],
+    "registrationLink": "https://example.com/full-stack-basics-workshop-registration",
+    "contactEmail": "info@example.com",
+    "contactPhone": "+1 (123) 456-7890"
+  },
+  {
+    "id": "6",
+    "workshopTitle": "Advanced Full-Stack Development Workshop",
+    "stack": "JavaScript Full Stack",
+    "level": "Advanced",
+    "date": "2024-04-20",
+    "time": "9:30 AM - 5:30 PM",
+    "location": "789 Code Road, Techtown, ST",
+    "description": "Join our advanced full-stack development workshop for experienced developers. This workshop covers advanced topics and best practices in both frontend and backend development using JavaScript.",
+    "instructors": [
+      {
+        "name": "Sophia Martinez",
+        "title": "Senior Full-Stack Developer",
+        "bio": "Sophia has extensive experience in full-stack development and will guide you through advanced concepts and techniques."
+      },
+      {
+        "name": "David Lee",
+        "title": "Front-End Architect",
+        "bio": "David specializes in front-end architecture and will cover advanced topics in client-side development."
+      }
+    ],
+    "agenda": [
+      {
+        "time": "9:30 AM - 11:00 AM",
+        "sessionTitle": "Advanced Frontend Development",
+        "description": "Delve into advanced frontend topics, including component architecture, state management, and performance optimization."
+      },
+      {
+        "time": "11:15 AM - 12:45 PM",
+        "sessionTitle": "Advanced Backend Development",
+        "description": "Explore advanced backend concepts, including authentication, security, and building RESTful APIs."
+      },
+      {
+        "time": "12:45 PM - 1:45 PM",
+        "sessionTitle": "Lunch Break",
+        "description": "Enjoy a gourmet lunch and network with other advanced developers."
+      },
+      {
+        "time": "2:00 PM - 3:30 PM",
+        "sessionTitle": "Database Design and Optimization",
+        "description": "Master advanced database design principles and optimization strategies for scalable applications."
+      },
+      {
+        "time": "3:45 PM - 5:30 PM",
+        "sessionTitle": "Deployment and Scalability",
+        "description": "Discover advanced deployment and scalability strategies to take your full-stack applications to the next level."
+      }
+    ],
+    "registrationLink": "https://example.com/full-stack-advanced-workshop-registration",
+    "contactEmail": "info@example.com",
+    "contactPhone": "+1 (123) 456-7890"
+  }    
+]
+  

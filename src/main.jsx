@@ -12,6 +12,8 @@ import Root from './components/Root/Root';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Schedule from './components/Schedule/Schedule';
+import About from './components/About/About';
 
 const router = createBrowserRouter([
   {
@@ -24,13 +26,21 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path:'/',
+        path:'/login',
         element: <Login></Login>
       },
       {
-        path:'/',
+        path:'/register',
         element: <Register></Register>
       },
+      {
+        path:'/schedule',
+        element: <Schedule></Schedule>
+      },
+      {
+        path:'/about',
+        element: <About></About>
+      }
     ]
   },
 ]);
