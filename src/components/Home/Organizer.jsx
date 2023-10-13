@@ -4,8 +4,8 @@ const Organizer = () => {
     return (
         
         <div>
-            <h1 className="text-4xl font-bold text-pink-600 mt-8 ml-80">Speakers And Organizers</h1>
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 py-12">
+            <h1 className="text-4xl ml-20 font-bold text-pink-600 mt-8 lg:ml-80">Speakers And Organizers</h1>
+            <div className="ml-20 grid grid-cols-1 gap-8 py-12 lg:grid-cols-4 ">
             <div className="card card-compact w-64 bg-base-100 shadow-xl">
                 <figure><img src="https://i.ibb.co/K7Vyyqq/speaker5.jpg" alt="" /></figure>
                 <div className="card-body">

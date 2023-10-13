@@ -4,14 +4,13 @@ import redCross from "../../assets/red3.png";
 const PriceCard = () => {
   return (
     <div className="py-10">
-        <h1 className="mx-40 text-3xl text-pink-500  font-bold p-8 lg:text-center lg:text-6xl ">Speakers And Organizers</h1>
+        <h1 className =" ml-5 mb-5 text-3xl text-pink-500  font-bold lg:p-8 lg:text-center lg:text-6xl">Speakers And Organizers</h1>
       <div
-        className="grid grid-cols-1 gap-8 mx-20 lg:grid-cols-3 "
+        className="ml-5 grid gap-5 grid-cols-1 lg:grid-cols-3 "
         data-aos="zoom-in-down"
       >
         <div
-          className="card w-96 bg-primary text-primary-content shadow-xl"
-          data-aos="flip-right"
+          className="card bg-primary text-primary-content shadow-xl w-[380px]"
         >
           <div className="card-body">
             <h2 className="card-title text-6xl">Silver Plan</h2>
@@ -53,8 +52,7 @@ const PriceCard = () => {
           </div>
         </div>
         <div
-          className="card w-96 bg-violet-700 text-primary-content shadow-xl"
-          data-aos="flip-left"
+          className="card w-[380px] bg-violet-700 text-primary-content shadow-xl"
         >
           <div className="card-body">
             <h2 className="card-title text-6xl text-center">Platinum</h2>
@@ -96,8 +94,7 @@ const PriceCard = () => {
           </div>
         </div>
         <div
-          className="card w-96 bg-green-600 text-primary-content shadow-xl"
-          data-aos="flip-up"
+          className="card w-[380px] bg-green-600 text-primary-content shadow-xl"
         >
           <div className="card-body">
             <h2 className="card-title text-6xl text-center">Golden</h2>
