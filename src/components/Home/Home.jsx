@@ -14,7 +14,6 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar></Navbar>
             <Banner></Banner>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 py-12">
                 {
@@ -26,7 +25,6 @@ const Home = () => {
             </div>
             <Organizer></Organizer>
             <PriceCard></PriceCard>
-            <Footer></Footer>
         </div>
     );
 };

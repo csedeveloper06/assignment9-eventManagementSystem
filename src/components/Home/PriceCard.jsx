@@ -13,7 +13,7 @@ const PriceCard = () => {
           className="card bg-primary text-primary-content shadow-xl w-[380px]"
         >
           <div className="card-body">
-            <h2 className="card-title text-6xl">Silver Plan</h2>
+            <h2 className="card-title text-6xl">Silver</h2>
             <p className="text-7xl font-extrabold text-center">
               <span className="text-2xl">$</span>90
               <span className="text-3xl">/month</span>
