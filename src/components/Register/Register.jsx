@@ -1,10 +1,24 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from 'sweetalert2'
 
 
 const Register = () => {
     const{createUser} = useContext (AuthContext)
+    const[ registerError,setRegisterError ] = useState('')
+    const [ registerSuccess, setRegisterSuccess ] = useState('');
+
+
+    // const handleRegisterError= () =>{ 
+    //         Swal.fire({
+    //             icon: 'error',
+    //             title: 'Oops...',
+    //             text: {registerError},
+    //             footer: '<a href="">Why do I have this issue?</a>'
+    //         })    
+    // }
+
     const handleRegister = e => {
         e.preventDefault();
         console.log(e.currentTarget);
@@ -15,13 +29,35 @@ const Register = () => {
         const password = form.get('password');
         console.log(name,photo,email,password);
 
+        //reset user
+        setRegisterError('');
+        setRegisterSuccess('');
+
+        
+        if(password.length > 6)
+        {
+            setRegisterError('password should be at least 6 characters');
+            return;
+        }
+        else if(/[A-z]/.test(password)){
+            setRegisterError('Your password have at least one capital letter')
+            return;
+        }
+        else if(/[!@#$%^&*]/.test(password))
+        {
+            setRegisterError('Your password have at least one special character')
+            return;
+        }
+
         //create user
         createUser(email,password)
             .then(result =>{
                 console.log(result.user)
+                setRegisterSuccess('user created successfully!')
             })
             .catch(error =>{
                 console.error(error)
+                setRegisterError(error.message);
             })
     }
 
@@ -71,11 +107,18 @@ const Register = () => {
                             required />
                     </div>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Register</button>
+                        <button  className="btn btn-primary">Register</button>
                     </div>
                 </form>
                     <p className="text-center m-5">Already have an account?
                         <Link className="to-blue-600 font-bold ml-3" to='/login'>Login</Link></p>
+                    {
+                        registerError && <p className="text-center text-red-600">{registerError}</p>
+                    }
+
+                    {
+                        registerSuccess && <p className="text-center text-green-600">{registerSuccess}</p>
+                    }
             </div>
         </div>
     );

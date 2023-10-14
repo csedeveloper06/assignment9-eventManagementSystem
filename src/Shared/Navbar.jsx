@@ -74,8 +74,8 @@ const Navbar = () => {
           {
             user ?
                <>
-                  <span className="text-xs">{user.name}</span>
-                  <button onClick={handleLogOut} className="w-16 bg-pink-600 p-3  text-base-300 lg:w-24
+                  
+                  <button onClick={handleLogOut} className="w-16 text-[10px] bg-pink-600 p-3  text-base-300 lg:w-24
                   rounded-xl">Log Out</button>
                </>
                 :
