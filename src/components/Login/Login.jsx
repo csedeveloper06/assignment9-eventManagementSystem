@@ -2,10 +2,27 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import googleImg from '../../assets/google1.png';
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+//import app from "../../firebase/firebase.config";
 
 
 const Login = () => {
-    const {signIn} = useContext(AuthContext);
+
+    const provider = new GoogleAuthProvider();
+    // const auth = getAuth(app);
+
+    const handleGoogleSignIn = ()=> {
+        signInWithPopup(auth,provider)
+        .then((result) =>{
+           const user = result.user;
+           console.log(user);
+         })
+        .catch(error => {
+            console.error(error);
+        })
+    }
+
+    const {signIn,auth} = useContext(AuthContext);
     const [loginError,setLoginError] = useState('');
     const [loginSuccess,setLoginSuccess] = useState('');
 
@@ -73,7 +90,7 @@ const Login = () => {
                 </div>
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Login</button>
-                    <button className="btn flex items-center justify-center gap-3 m-3">
+                    <button onClick={handleGoogleSignIn} className="btn flex items-center justify-center gap-3 m-3">
                         <img className="w-10 h-10 rounded-full" 
                             src={googleImg} alt="" />Login With Google</button>
                 </div>
