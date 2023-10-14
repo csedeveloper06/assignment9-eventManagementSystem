@@ -7,7 +7,7 @@ import Organizer from "./Organizer";
 import PriceCard from "./PriceCard";
 
 
-const Home = () => {
+const Home = ({service}) => {
 
     const services = useLoaderData();
     // console.log(info);

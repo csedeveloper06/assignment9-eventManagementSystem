@@ -15,6 +15,7 @@ import Register from './components/Register/Register';
 import Schedule from './components/Schedule/Schedule';
 import About from './components/About/About';
 import AuthProvider from './providers/AuthProvider';
+import ServiceDetails from './components/Home/ServiceDetails/ServiceDetails';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,12 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>,
-        loader:() => fetch('training.json')
+        loader:() => fetch('/training.json')
+      },
+      {
+        path:'/Service/:id',
+        element:<ServiceDetails></ServiceDetails>,
+        loader:()=> fetch('training.json')
       },
       {
         path:'/login',
