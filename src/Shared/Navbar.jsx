@@ -28,6 +28,12 @@ const Navbar = () => {
         <li>
           <NavLink to="/login">Login</NavLink>
         </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/schedule">Schedule</NavLink>
+        </li>
       </ul>
     </>
   );
@@ -81,7 +87,7 @@ const Navbar = () => {
           {
             user ?
                <>
-                  <span>{user.displayName}</span>
+                  <span className="text-xs">{user.displayName}</span>
                   <button onClick={handleLogOut} className="w-16 text-[10px] bg-pink-600 p-1  text-base-300 lg:w-24
                   rounded-xl">Log Out</button>
                </>

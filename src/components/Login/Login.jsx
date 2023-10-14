@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import googleImg from '../../assets/google1.png';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
@@ -23,6 +23,10 @@ const Login = () => {
     }
 
     const {signIn,auth} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('location in the login page',location);
+
     const [loginError,setLoginError] = useState('');
     const [loginSuccess,setLoginSuccess] = useState('');
 
@@ -37,6 +41,8 @@ const Login = () => {
         signIn(email,password)
         .then(result =>{
             console.log(result.user)
+            // navigate after login 
+            navigate(location?.state ? location.state : '/' );
             setLoginSuccess('user login successfully')
         })
         .catch(error =>{

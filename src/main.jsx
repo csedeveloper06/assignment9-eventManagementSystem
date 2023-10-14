@@ -16,6 +16,7 @@ import Schedule from './components/Schedule/Schedule';
 import About from './components/About/About';
 import AuthProvider from './providers/AuthProvider';
 import ServiceDetails from './components/Home/ServiceDetails/ServiceDetails';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -30,8 +31,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/Service/:id',
-        element:<ServiceDetails></ServiceDetails>,
-        loader:()=> fetch('training.json')
+        element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+        loader:()=> fetch('/training.json')
       },
       {
         path:'/login',
@@ -43,11 +44,11 @@ const router = createBrowserRouter([
       },
       {
         path:'/schedule',
-        element: <Schedule></Schedule>
+        element: <PrivateRoute><Schedule></Schedule></PrivateRoute>
       },
       {
         path:'/about',
-        element: <About></About>
+        element:<PrivateRoute> <About></About></PrivateRoute>
       }
     ]
   },
