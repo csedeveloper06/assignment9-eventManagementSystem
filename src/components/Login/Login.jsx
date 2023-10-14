@@ -1,25 +1,29 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import googleImg from '../../assets/google1.png';
 
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
+    const [loginError,setLoginError] = useState('');
+    const [loginSuccess,setLoginSuccess] = useState('');
 
     const handleLogin = e => {
         e.preventDefault();
         console.log(e.currentTarget);
         const form = new FormData(e.currentTarget);
-        const name = form.get('name');
-        const photo = form.get('photo');
+        // const name = form.get('name');
+        // const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
         signIn(email,password)
         .then(result =>{
             console.log(result.user)
+            setLoginSuccess('user login successfully')
         })
         .catch(error =>{
-            console.error(error)
+            setLoginError(error.message);
         })
     }
 
@@ -69,10 +73,19 @@ const Login = () => {
                 </div>
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Login</button>
+                    <button className="btn flex items-center justify-center gap-3 m-3">
+                        <img className="w-10 h-10 rounded-full" 
+                            src={googleImg} alt="" />Login With Google</button>
                 </div>
             </form>
                 <p className="text-center m-5">Do not have an account?
                      <Link className="to-blue-600 font-bold ml-3" to='/register'>Register</Link></p>
+                {
+                    loginError && <p className="text-red-600 text-center">{loginError}</p>
+                }
+                {
+                    loginSuccess && <p className="text-green-600 text-center">{loginSuccess}</p>
+                }
         </div>
     );
 };

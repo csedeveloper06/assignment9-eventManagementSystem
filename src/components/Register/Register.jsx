@@ -1,23 +1,14 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
-import Swal from 'sweetalert2'
+import { updateProfile } from "firebase/auth";
+
 
 
 const Register = () => {
     const{createUser} = useContext (AuthContext)
     const[ registerError,setRegisterError ] = useState('')
     const [ registerSuccess, setRegisterSuccess ] = useState('');
-
-
-    // const handleRegisterError= () =>{ 
-    //         Swal.fire({
-    //             icon: 'error',
-    //             title: 'Oops...',
-    //             text: {registerError},
-    //             footer: '<a href="">Why do I have this issue?</a>'
-    //         })    
-    // }
 
     const handleRegister = e => {
         e.preventDefault();
@@ -54,6 +45,14 @@ const Register = () => {
             .then(result =>{
                 console.log(result.user)
                 setRegisterSuccess('user created successfully!')
+
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photo
+                })
+                .then(()=> console.log('profile updates'))
+                .catch()
+
             })
             .catch(error =>{
                 console.error(error)

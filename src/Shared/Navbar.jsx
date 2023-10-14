@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 // import { BsFillPersonFill } from "react-icons/bs";
 import profilepic from "../assets/logo.png";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Navbar = () => {
@@ -13,6 +13,8 @@ const Navbar = () => {
       .then()
       .catch()
   }
+
+
 
   const navLinks = (
     <>
@@ -58,29 +60,34 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case lg:text-3xl text-orange-500">devWebWorks</a>
+          <a className="btn btn-ghost normal-case lg:text-3xl text-orange-500">devWeb</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        <div className="navbar-end flex gap-5">
+        <div className="navbar-end flex">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-20 rounded-full">
+            <div className="w-10 rounded-full">
               {/* {<BsFillPersonFill className="w-10"></BsFillPersonFill>} */}
-              <img className="" src={profilepic} alt="" />
+              {
+                user ? <img className="" src={user.photoURL} alt="" />
+                : <img className="" src={profilepic} alt="" />
+              }
+             
+              
             </div>
           </label>
 
           {
             user ?
                <>
-                  
-                  <button onClick={handleLogOut} className="w-16 text-[10px] bg-pink-600 p-3  text-base-300 lg:w-24
+                  <span>{user.displayName}</span>
+                  <button onClick={handleLogOut} className="w-16 text-[10px] bg-pink-600 p-1  text-base-300 lg:w-24
                   rounded-xl">Log Out</button>
                </>
                 :
                 <Link to="/login">
-                    <button className="bg-pink-600 p-3 w-24 text-base-300 rounded-xl">Login</button>
+                    <button className="bg-pink-600 p-1 w-24 text-base-300 rounded-xl">Login</button>
                 </Link>
 
           }
